@@ -3,27 +3,63 @@
 	"name": "Organic",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#comment"
 		},
 		{
-			"include": "#strings"
+			"include": "#function"
+		},
+		{
+			"include": "#constant"
+		},
+		{
+			"include": "#language-constant"
+		},
+		{
+			"include": "#variable"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.organic",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.organic",
-			"begin": "\"",
-			"end": "\"",
+		"comment": {
 			"patterns": [
 				{
-					"name": "constant.character.escape.organic",
-					"match": "\\\\."
+					"name": "comment.line.number-sign.organic",
+					"match": "#.*\n"
+				}
+			]
+		},
+		"function": {
+			"patterns": [
+				{
+					"match": "([a-zA-Z_][a-zA-Z0-9\\-_]*)\\s*\\(",
+					"captures": {
+						"0": {
+							"name": "support.function.organic"
+						}
+					}
+				}
+			]
+		},
+		"variable": {
+			"patterns": [
+				{
+					"name": "variable.name.organic",
+					"match": "[a-zA-Z_][a-zA-Z0-9\\-_]*"
+				}
+			]
+		},
+		"language-constant": {
+			"patterns": [
+				{
+					"name": "constant.language.organic",
+					"match": "(sequence-forwards|sequence-backwards|sequence-ping-pong|sequence-random)"
+				}
+			]
+		},
+		"constant": {
+			"patterns": [
+				{
+					"name": "constant.numeric.organic",
+					"match": "-?([0-9]*[.])?[0-9]+"
 				}
 			]
 		}
