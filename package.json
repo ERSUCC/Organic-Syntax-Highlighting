@@ -3,11 +3,19 @@
   "displayName": "Organic",
   "description": "Syntax highlighting for Organic",
   "version": "0.1.0",
+  "publisher": "Isaac Brown",
   "engines": {
     "vscode": "^1.85.0"
   },
+  "license": "See LICENSE.txt",
   "categories": [
     "Programming Languages"
+  ],
+  "keywords": [
+    "organic",
+    "music",
+    "sound",
+    "audio"
   ],
   "contributes": {
     "languages": [{
