@@ -50,8 +50,12 @@
 		"language-constant": {
 			"patterns": [
 				{
-					"name": "constant.language.organic",
+					"name": "constant.language.sequence.organic",
 					"match": "(sequence-forwards|sequence-backwards|sequence-ping-pong|sequence-random)"
+				},
+				{
+					"name": "constant.language.random.organic",
+					"match": "(random-step|random-linear)"
 				}
 			]
 		},
