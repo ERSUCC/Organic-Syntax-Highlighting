@@ -21,5 +21,9 @@
       "scopeName": "source.organic",
       "path": "./syntaxes/organic.tmLanguage.json"
     }]
+  },
+  "repository": {
+  	"type": "git",
+  	"url": "https://github.com/ERSUCC/Organic-Syntax-Highlighting"
   }
 }
