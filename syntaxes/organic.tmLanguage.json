@@ -56,6 +56,10 @@
 				{
 					"name": "constant.language.random.organic",
 					"match": "(random-step|random-linear)"
+				},
+				{
+					"name": "constant.language.note.organic",
+					"match": "[a-g][sf]?[0-9]"
 				}
 			]
 		},
