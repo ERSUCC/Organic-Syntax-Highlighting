@@ -23,7 +23,7 @@
 			"patterns": [
 				{
 					"name": "comment.line.number-sign.organic",
-					"match": "#.*\n"
+					"match": "//.*\n"
 				}
 			]
 		},
